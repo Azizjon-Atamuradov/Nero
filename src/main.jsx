@@ -9,12 +9,19 @@ import {
 } from "react-router-dom";
 
 import RootLayout from "./layouts/RootLayout";
+import Home from "./pages/Home";
+import Men from "./pages/Men";
+import Women from "./pages/Women";
+import Kids from "./pages/Kids";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <>
-      <Route path="/" element={<RootLayout />}></Route>
-    </>,
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="men" element={<Men />} />
+      <Route path="women" element={<Women />} />
+      <Route path="kids" element={<Kids />} />
+    </Route>,
   ),
 );
 
