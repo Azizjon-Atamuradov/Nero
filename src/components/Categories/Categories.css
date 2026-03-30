@@ -1,36 +1,27 @@
 .categories-container {
   display: flex;
   width: 100%;
-  margin-bottom: 300px;
+}
+
+.category-card {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .categories-container img {
   width: 100%;
-  height: auto;
-}
-
-.category-card-men {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-.category-card-women {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
-}
-.category-card-kids {
-  flex: 1;
-  position: relative;
-  overflow: hidden;
+  height: 650px;
+  object-fit: cover;
 }
 
 .categories-btn {
   position: absolute;
   bottom: 20px;
   left: 50%;
+  /* width: 175px; */
   transform: translate(-50%);
-  padding: 10px 25px;
+  padding: 10px 20px;
   background-color: white;
   color: black;
   border: none;
@@ -45,4 +36,17 @@
 .categories-btn:hover {
   opacity: 1;
   transform: translateX(-50%) translateY(-5px);
+}
+@media (max-width: 768px) {
+  .categories-container {
+    flex-direction: column;
+  }
+
+  .categories-container img {
+    height: 600px;
+  }
+  .categories-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
