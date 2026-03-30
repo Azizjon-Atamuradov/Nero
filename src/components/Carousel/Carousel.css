@@ -6,14 +6,23 @@
 
 .cta-btn {
   background-color: white;
+ 
   color: black;
   font-weight: bold;
   border-radius: 25px;
-  padding: 5px;
+  padding: 10px;
   width: 150px;
   border: none;
 }
 
-.carousel-item p{
-    font-weight: bold;
+.cta-btn:hover {
+  background-color: #fff;   
+  transform: scale(1.05);   
 }
+
+.carousel-item p {
+  font-weight: bold;
+}
+
+
+ 
