@@ -1,10 +1,13 @@
 import React from "react";
-import men from "../../assets/hero_men.jpg"
-import women from "../../assets/hero_women.jpg"
-import kids from "../../assets/hero_kids.jpg"
-import "./Carousel.css"
+import men from "../../assets/hero_men.jpg";
+import women from "../../assets/hero_women.jpg";
+import kids from "../../assets/hero_kids.jpg";
+import "./Carousel.css";
+import { useNavigate } from "react-router-dom";
 
 function Carousel() {
+  const navigate = useNavigate();
+
   return (
     <div
       id="carouselExampleAutoplaying"
@@ -13,13 +16,14 @@ function Carousel() {
       data-bs-interval="3000"
     >
       <div className="carousel-inner">
-
         <div className="carousel-item active">
           <img src={men} className="d-block w-100" alt="slide1" />
           <div className="carousel-caption text-start">
             <h1>New Men's Collection</h1>
             <p>Latest styles, performance-ready, designed for you.</p>
-            <button className="cta-btn">Shop Men</button>
+            <button className="cta-btn" onClick={() => navigate("/men")}>
+              Shop Now
+            </button>
           </div>
         </div>
 
@@ -28,7 +32,9 @@ function Carousel() {
           <div className="carousel-caption text-start">
             <h1>Fresh Styles for Women</h1>
             <p>Chic, comfortable, and ready for every occasion.</p>
-               <button className="cta-btn">Shop Women</button>
+            <button className="cta-btn" onClick={() => navigate("/women")}>
+              Shop Now
+            </button>
           </div>
         </div>
 
@@ -37,10 +43,11 @@ function Carousel() {
           <div className="carousel-caption text-start">
             <h1>Fun & Comfortable for Kids</h1>
             <p>Playful designs, built to move and grow.</p>
-               <button className="cta-btn">Shop Kids</button>
+            <button className="cta-btn" onClick={() => navigate("/kids")}>
+              Shop Now
+            </button>
           </div>
         </div>
-
       </div>
 
       <button

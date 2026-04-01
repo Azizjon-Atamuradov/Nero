@@ -1,7 +1,11 @@
-import { products } from "../../data/products";
 import "./NewArrivals.css";
 
+import { products } from "../../data/products";
+import { useNavigate } from "react-router-dom";
+
 const NewArrivals = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="arrivals-container">
       <div className="arrivals-header">
@@ -11,15 +15,16 @@ const NewArrivals = () => {
 
       <div className="products-grid">
         {products.map((product) => (
-          <div key={product.id} className="product-card">
+          <div
+            key={product.id}
+            className="product-card"
+            onClick={() => navigate(`/product/${product.id}`)}
+          >
             <img src={product.img} alt={product.name} />
             <div className="product-details">
-              
-                    <h3>${product.price}</h3>
-                    <p>{product.name}</p>
+              <h3>${product.price}</h3>
+              <p>{product.name}</p>
             </div>
-
-            {/* <button>View Product</button> */}
           </div>
         ))}
       </div>

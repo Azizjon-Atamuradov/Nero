@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import {
   Route,
@@ -15,6 +15,7 @@ import Home from "./pages/Home";
 import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Kids from "./pages/Kids";
+import ProductDetails from "./pages/ProductDetails";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="men" element={<Men />} />
       <Route path="women" element={<Women />} />
       <Route path="kids" element={<Kids />} />
+      <Route path="product/:id" element={<ProductDetails />} />
     </Route>,
   ),
 );
