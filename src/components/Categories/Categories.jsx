@@ -9,7 +9,7 @@ const Categories = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="categories-container">
+    <section className="categories-container">
       <div className="category-card">
         <img src={categories_men} alt="" />
         <button className="categories-btn" onClick={() => navigate("/men")}>
@@ -28,7 +28,7 @@ const Categories = () => {
           Shop Kids{" "}
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

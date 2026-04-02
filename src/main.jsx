@@ -16,6 +16,7 @@ import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Kids from "./pages/Kids";
 import ProductDetails from "./pages/ProductDetails";
+import NewArrivalsProducts from "./pages/NewArrivalsProducts/NewArrivalsProducts";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="women" element={<Women />} />
       <Route path="kids" element={<Kids />} />
       <Route path="product/:id" element={<ProductDetails />} />
+      <Route path="new-arrivals" element={<NewArrivalsProducts />} />
     </Route>,
   ),
 );

@@ -5,16 +5,21 @@ import { useNavigate } from "react-router-dom";
 
 const NewArrivals = () => {
   const navigate = useNavigate();
+  const visibleProducts = products.slice(0, 8);
+
+  if (!products.length) {
+    return <p>No products available</p>;
+  }
 
   return (
-    <div className="arrivals-container">
+    <section className="arrivals-container">
       <div className="arrivals-header">
-        <h1> NEW ARRIVALS</h1>
+        <h1>NEW ARRIVALS</h1>
         <p>Discover the latest styles just dropped this week.</p>
       </div>
 
       <div className="products-grid">
-        {products.map((product) => (
+        {visibleProducts.map((product) => (
           <div
             key={product.id}
             className="product-card"
@@ -28,7 +33,12 @@ const NewArrivals = () => {
           </div>
         ))}
       </div>
-    </div>
+      <div className="view-all">
+        <button onClick={() => navigate("/new-arrivals")}>
+          View All
+        </button>
+      </div>
+    </section>
   );
 };
 
