@@ -5,23 +5,23 @@
 }
 
 .cta-btn {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  border-radius: 25px;
-  padding: 10px;
-  width: 150px;
-  border: none;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .cta-btn:hover {
-  background-color: #fff;   
-  transform: scale(1.05);   
+  background-color: #000;
+  color: #fff;
 }
 
 .carousel-item p {
   font-weight: bold;
 }
-
-
- 

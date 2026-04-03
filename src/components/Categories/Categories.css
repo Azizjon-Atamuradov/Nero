@@ -19,24 +19,24 @@
   position: absolute;
   bottom: 20px;
   left: 50%;
-  /* width: 175px; */
   transform: translate(-50%);
-  padding: 10px 20px;
-  background-color: white;
-  color: black;
-  border: none;
-  font-weight: bold;
+  padding: 12px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 25px;
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .categories-btn:hover {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-5px);
+  background-color: #000;
+  color: #fff;
 }
+
 @media (max-width: 768px) {
   .categories-container {
     flex-direction: column;

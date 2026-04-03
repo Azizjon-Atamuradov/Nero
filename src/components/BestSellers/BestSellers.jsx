@@ -31,6 +31,11 @@ const BestSellers = () => {
           </div>
         ))}
       </div>
+        <div className="view-all">
+        <button onClick={() => navigate("/best-sellers")}>
+          View All
+        </button>
+      </div>
     </section>
   );
 };

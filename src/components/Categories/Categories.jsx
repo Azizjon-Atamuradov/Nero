@@ -25,7 +25,7 @@ const Categories = () => {
       <div className="category-card">
         <img src={categories_kids} alt="" />
         <button className="categories-btn" onClick={() => navigate("/kids")}>
-          Shop Kids{" "}
+          Shop Kids
         </button>
       </div>
     </section>
