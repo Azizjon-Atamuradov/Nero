@@ -28,7 +28,7 @@ export const products = [
     img: product2,
     category: "men",
     isBestSeller: false,
-     isNew: true,
+    isNew: true,
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const products = [
     img: product3,
     category: "men",
     isBestSeller: false,
-     isNew: true,
+    isNew: true,
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const products = [
     img: product4,
     category: "men",
     isBestSeller: false,
-     isNew: true,
+    isNew: true,
   },
   {
     id: 5,
@@ -55,6 +55,7 @@ export const products = [
     img: product5,
     category: "men",
     isBestSeller: false,
+    isOnSale: true,
   },
   {
     id: 6,
@@ -63,7 +64,8 @@ export const products = [
     img: product6,
     category: "men",
     isBestSeller: false,
-     isNew: false,
+    isNew: false,
+    isOnSale: true,
   },
   {
     id: 7,
@@ -72,7 +74,8 @@ export const products = [
     img: product7,
     category: "men",
     isBestSeller: false,
-     isNew: false,
+    isNew: false,
+    isOnSale: true,
   },
   {
     id: 8,
@@ -81,7 +84,8 @@ export const products = [
     img: product8,
     category: "men",
     isBestSeller: false,
-     isNew: true,
+    isNew: true,
+    isOnSale: true,
   },
   {
     id: 9,
@@ -90,7 +94,8 @@ export const products = [
     img: product9,
     category: "men",
     isBestSeller: true,
-     isNew: false,
+    isNew: false,
+    isOnSale: true,
   },
   {
     id: 10,
@@ -99,7 +104,8 @@ export const products = [
     img: product10,
     category: "men",
     isBestSeller: true,
-     isNew: true,
+    isNew: true,
+    isOnSale: true,
   },
   {
     id: 11,
@@ -108,7 +114,8 @@ export const products = [
     img: product11,
     category: "men",
     isBestSeller: true,
-     isNew: true,
+    isNew: true,
+    isOnSale: true,
   },
   {
     id: 12,
@@ -117,6 +124,7 @@ export const products = [
     img: product12,
     category: "men",
     isBestSeller: true,
-     isNew: true,
+    isNew: true,
+    isOnSale: true,
   },
 ];

@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Categories from "../components/Categories/Categories";
 import NewArrivals from "../components/NewArrivals/NewArrivals";
 import BestSellers from "../components/BestSellers/BestSellers";
+import Sale from "../components/Sale/Sale";
 
 const Home = () => {
   return (
@@ -10,7 +11,9 @@ const Home = () => {
       <Hero />
       <Categories />
       <NewArrivals />
-      <BestSellers/>
+       <Sale/>
+      <BestSellers />
+     
     </div>
   );
 };

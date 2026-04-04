@@ -71,10 +71,11 @@ const Navbar = () => {
         </div>
 
         <FaShoppingBag />
-      </div>
-      <div className="menu-icon" onClick={() => setMenuOpen((prev) => !prev)}>
+          <div className="menu-icon" onClick={() => setMenuOpen((prev) => !prev)}>
         <FaBars />
       </div>
+      </div>
+    
     </nav>
   );
 };
