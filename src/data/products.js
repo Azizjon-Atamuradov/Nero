@@ -10,12 +10,30 @@ import product9 from "../assets/product9.jpg";
 import product10 from "../assets/product10.jpg";
 import product11 from "../assets/product11.jpg";
 import product12 from "../assets/product12.jpg";
+import product13 from "../assets/product13.jpg";
+import product14 from "../assets/product14.jpg";
+import product15 from "../assets/product15.jpg";
+import product16 from "../assets/product16.jpg";
+import product17 from "../assets/product17.jpg";
+import product18 from "../assets/product18.jpg";
+import product19 from "../assets/product19.jpg";
+import product20 from "../assets/product20.jpg";
+import product21 from "../assets/product21.jpg";
+import product22 from "../assets/product22.jpg";
+import product23 from "../assets/product23.jpg";
+import product24 from "../assets/product24.jpg";
+import product25 from "../assets/product25.jpg";
+import product26 from "../assets/product26.jpg";
+import product27 from "../assets/product27.jpg";
+import product28 from "../assets/product28.jpg";
+import product29 from "../assets/product29.jpg";
+import product30 from "../assets/product30.jpg";
 
 export const products = [
   {
     id: 1,
     name: "Cool Sneakers",
-    price: 10,
+    price: 1,
     img: product1,
     category: "men",
     isBestSeller: true,
@@ -24,7 +42,7 @@ export const products = [
   {
     id: 2,
     name: "Running Shoes",
-    price: 20,
+    price: 2,
     img: product2,
     category: "men",
     isBestSeller: false,
@@ -33,16 +51,16 @@ export const products = [
   {
     id: 3,
     name: "Stylish Jacket",
-    price: 30,
+    price: 3,
     img: product3,
-    category: "men",
+    category: "women",
     isBestSeller: false,
     isNew: true,
   },
   {
     id: 4,
     name: "Classic Hoodie",
-    price: 40,
+    price: 4,
     img: product4,
     category: "men",
     isBestSeller: false,
@@ -51,7 +69,7 @@ export const products = [
   {
     id: 5,
     name: "Urban Flex Sneakers",
-    price: 50,
+    price: 5,
     img: product5,
     category: "men",
     isBestSeller: false,
@@ -60,7 +78,7 @@ export const products = [
   {
     id: 6,
     name: "Air Motion Running Shoes",
-    price: 60,
+    price: 6,
     img: product6,
     category: "men",
     isBestSeller: false,
@@ -70,7 +88,7 @@ export const products = [
   {
     id: 7,
     name: "Classic Street Hoodie",
-    price: 70,
+    price: 7,
     img: product7,
     category: "men",
     isBestSeller: false,
@@ -80,9 +98,9 @@ export const products = [
   {
     id: 8,
     name: "Performance Fit Jacket",
-    price: 80,
+    price: 8,
     img: product8,
-    category: "men",
+    category: "women",
     isBestSeller: false,
     isNew: true,
     isOnSale: true,
@@ -90,7 +108,7 @@ export const products = [
   {
     id: 9,
     name: "Essential Cotton T-Shirt",
-    price: 90,
+    price: 9,
     img: product9,
     category: "men",
     isBestSeller: true,
@@ -100,9 +118,9 @@ export const products = [
   {
     id: 10,
     name: "Premium Slim Jeans",
-    price: 100,
+    price: 10,
     img: product10,
-    category: "men",
+    category: "women",
     isBestSeller: true,
     isNew: true,
     isOnSale: true,
@@ -110,9 +128,9 @@ export const products = [
   {
     id: 11,
     name: "Lightweight Training Shorts",
-    price: 110,
+    price: 11,
     img: product11,
-    category: "men",
+    category: "women",
     isBestSeller: true,
     isNew: true,
     isOnSale: true,
@@ -120,11 +138,192 @@ export const products = [
   {
     id: 12,
     name: "Active Sport Tracksuit",
-    price: 120,
+    price: 12,
     img: product12,
+    category: "women",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 13,
+    name: "Active Sport Tracksuit",
+    price: 13,
+    img: product13,
     category: "men",
     isBestSeller: true,
     isNew: true,
     isOnSale: true,
   },
+  {
+    id: 14,
+    name: "Active Sport Tracksuit",
+    price: 14,
+    img: product14,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 15,
+    name: "Active Sport Tracksuit",
+    price: 15,
+    img: product15,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 16,
+    name: "Active Sport Tracksuit",
+    price: 16,
+    img: product16,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 17,
+    name: "Active Sport Tracksuit",
+    price: 17,
+    img: product17,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 18,
+    name: "Active Sport Tracksuit",
+    price: 18,
+    img: product18,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 19,
+    name: "Active Sport Tracksuit",
+    price: 19,
+    img: product19,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 20,
+    name: "Active Sport Tracksuit",
+    price: 20,
+    img: product20,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 21,
+    name: "Active Sport Tracksuit",
+    price: 21,
+    img: product21,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 22,
+    name: "Active Sport Tracksuit",
+    price: 22,
+    img: product22,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 23,
+    name: "Active Sport Tracksuit",
+    price: 23,
+    img: product23,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 24,
+    name: "Active Sport Tracksuit",
+    price: 24,
+    img: product24,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 25,
+    name: "Active Sport Tracksuit",
+    price: 25,
+    img: product25,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 26,
+    name: "Active Sport Tracksuit",
+    price: 26,
+    img: product26,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 27,
+    name: "Active Sport Tracksuit",
+    price: 27,
+    img: product27,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 28,
+    name: "Active Sport Tracksuit",
+    price: 28,
+    img: product28,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 29,
+    name: "Active Sport Tracksuit",
+    price: 29,
+    img: product29,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 30,
+    name: "Active Sport Tracksuit",
+    price: 30,
+    img: product30,
+    category: "men",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+
 ];

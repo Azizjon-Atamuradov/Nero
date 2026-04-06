@@ -12,7 +12,7 @@ import {
 
 import RootLayout from "./layouts/RootLayout";
 import Home from "./pages/Home";
-import Men from "./pages/Men";
+import Men from "./pages/Men/Men";
 import Women from "./pages/Women";
 import Kids from "./pages/Kids";
 import ProductDetails from "./pages/ProductDetails";
