@@ -3,12 +3,11 @@
 .men {
   padding: 40px;
   font-family: "Rubik", sans-serif;
-  
 }
 
 .men-header {
   margin-bottom: 30px;
-   text-align: center;
+  text-align: center;
 }
 
 .men-title {
@@ -17,9 +16,8 @@
 }
 
 .men-description {
-  font-size: 14px;
+  font-size: 17px;
   color: #555;
- 
 }
 
 .men-grid {
@@ -27,7 +25,7 @@
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 5px;
   cursor: pointer;
-   padding: 0 70px;
+  padding: 0 70px;
 }
 
 .product-card {
@@ -81,7 +79,17 @@
   }
 }
 
-
-/* test */
-
- 
+@media (max-width: 480px) {
+  .product-image {
+    height: 200px;
+  }
+  .men {
+    padding: 20px;
+  }
+  .product-name {
+    font-size: 13px;
+  }
+  .product-price {
+    font-size: 14px;
+  }
+}
