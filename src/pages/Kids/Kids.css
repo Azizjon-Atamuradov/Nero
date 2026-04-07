@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-.women {
+.kids {
   padding: 40px;
   font-family: "Rubik", sans-serif;
 }
 
-.women-header {
+.kids-header {
   margin-bottom: 30px;
   text-align: center;
 }
 
-.women-title {
+.kids-title {
   font-size: 28px;
   font-weight: 600;
 }
 
-.women-description {
+.kids-description {
   font-size: 17px;
   color: #555;
 }
 
-.women-grid {
+.kids-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 5px;
@@ -33,7 +33,6 @@
   overflow: hidden;
   padding: 3px;
 }
-
 .product-card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border: solid 1px black;
@@ -45,7 +44,6 @@
   overflow: hidden;
   margin-bottom: 15px;
 }
-
 .product-image img {
   width: 100%;
   height: 100%;
@@ -85,7 +83,7 @@
   .product-image {
     height: 200px;
   }
-  .women {
+  .kids {
     padding: 20px;
   }
   .product-name {

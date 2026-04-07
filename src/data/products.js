@@ -46,6 +46,15 @@ import product45 from "../assets/product45.jpg";
 import product46 from "../assets/product46.jpg";
 import product47 from "../assets/product47.jpg";
 import product48 from "../assets/product48.jpg";
+import product65 from "../assets/product65.jpg";
+import product66 from "../assets/product66.jpg";
+import product67 from "../assets/product67.jpg";
+import product68 from "../assets/product68.jpg";
+import product69 from "../assets/product69.jpg";
+import product70 from "../assets/product70.jpg";
+import product71 from "../assets/product71.jpg";
+import product72 from "../assets/product72.jpg";
+import product73 from "../assets/product73.jpg";
 
 export const products = [
   {
@@ -523,5 +532,94 @@ export const products = [
     isNew: true,
     isOnSale: true,
   },
-
+  {
+    id: 65,
+    name: "Active Sport Tracksuit",
+    price: 65,
+    img: product65,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 66,
+    name: "Active Sport Tracksuit",
+    price: 66,
+    img: product66,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 67,
+    name: "Active Sport Tracksuit",
+    price: 67,
+    img: product67,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 68,
+    name: "Active Sport Tracksuit",
+    price: 68,
+    img: product68,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 69,
+    name: "Active Sport Tracksuit",
+    price: 69,
+    img: product69,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 70,
+    name: "Active Sport Tracksuit",
+    price: 70,
+    img: product70,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 71,
+    name: "Active Sport Tracksuit",
+    price: 71,
+    img: product71,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 72,
+    name: "Active Sport Tracksuit",
+    price: 72,
+    img: product72,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
+  {
+    id: 73,
+    name: "Active Sport Tracksuit",
+    price: 73,
+    img: product73,
+    category: "kids",
+    isBestSeller: true,
+    isNew: true,
+    isOnSale: true,
+  },
 ];

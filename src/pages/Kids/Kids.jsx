@@ -1,29 +1,30 @@
-import "./Women.css";
+import "./Kids.css";
 import { products } from "../../data/products";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Women = () => {
-  const womenProducts = products.filter((item) => item.category === "women");
+const Kids = () => {
+  const kidsProducts = products.filter((item) => item.category === "kids");
   const [visibleCount, setVisibleCount] = useState(16);
-  const visibleProducts = womenProducts.slice(0, visibleCount);
+  const visibleProducts = kidsProducts.slice(0, visibleCount);
   const navigate = useNavigate();
 
   return (
-    <div className="women">
-      <div className="women-header">
-        <h1 className="women-title">WOMEN'S COLLECTION</h1>
-        <p className="women-description">
-          Built for performance. Refined for everyday style.
+    <div className="kids">
+      <div className="kids-header">
+        <h1 className="kids-title">KIDS COLLECTION</h1>
+        <p className="kids-description">
+          Built for play. Designed for growing energy.
         </p>
       </div>
 
-      <div className="women-grid">
+
+      <div className="kids-grid">
         {visibleProducts.map((product) => (
           <div
             className="product-card"
             key={product.id}
-            onClick={() => navigate(`/product/${product.id}`)}
+             onClick={() => navigate(`/product/${product.id}`)}
           >
             <div className="product-image">
               <img src={product.img} alt={product.name} />
@@ -36,9 +37,8 @@ const Women = () => {
           </div>
         ))}
       </div>
-
-      {visibleCount < womenProducts.length && (
-        <div className="view-all">
+      {visibleCount < kidsProducts.length && (
+       <div className="view-all">
           <button onClick={() => setVisibleCount((prev) => prev + 8)}>
             Load More
           </button>
@@ -48,4 +48,4 @@ const Women = () => {
   );
 };
 
-export default Women;
+export default Kids;

@@ -14,7 +14,7 @@ import RootLayout from "./layouts/RootLayout";
 import Home from "./pages/Home";
 import Men from "./pages/Men/Men";
 import Women from "./pages/Women/Women";
-import Kids from "./pages/Kids";
+import Kids from "./pages/Kids/Kids";
 import ProductDetails from "./pages/ProductDetails";
 import NewArrivalsProducts from "./pages/NewArrivalsProducts/NewArrivalsProducts";
 import BestSellersProducts from "./pages/BestSellersProducrs/BestSellersProducts";
