@@ -1,26 +1,42 @@
-.women {
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.sale {
   padding: 40px;
 }
 
-.women-header {
+.sale-header {
   margin-bottom: 30px;
   text-align: center;
 }
 
-.women-title {
-    font-family: "Poppins", sans-serif;
+.sale-title {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
-.women-description {
- font-family: "Roboto", sans-serif;
+.sale-description {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #5c5b5b;
   margin-bottom: 40px;
+}
+
+.product-price-sale {
+  font-size: 16px;
+  font-weight: 600;
+  color: red;
+  margin: 0;
+}
+
+.product-price-org{
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 400;
+ 
 }
 
 @media (max-width: 768px) {
@@ -33,7 +49,7 @@
   .product-image {
     height: 200px;
   }
-  .women {
+  .sale {
     padding: 20px;
   }
   .product-name {

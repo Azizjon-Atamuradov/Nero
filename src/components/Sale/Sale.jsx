@@ -15,7 +15,7 @@ const Sale = () => {
           On selected styles this season. Don’t miss out.
         </p>
 
-        <button onClick={() => navigate("/sale-products")}>
+        <button onClick={() => navigate("/sale")}>
           Shop Now
         </button>
       </div>

@@ -53,6 +53,15 @@ const Navbar = () => {
             Kids
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/sale"
+            className={({ isActive }) => (isActive ? "active" : "")}
+            onClick={() => setMenuOpen(false)}
+          >
+            Sale
+          </NavLink>
+        </li>
       </ul>
 
       <div className="nav-right">

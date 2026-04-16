@@ -2,6 +2,7 @@ import "./Women.css";
 import { products } from "../../data/products";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ProductGrid from "../../components/ProductGrid/ProductGrid";
 
 const Women = () => {
   const womenProducts = products.filter((item) => item.category === "women");
@@ -18,24 +19,7 @@ const Women = () => {
         </p>
       </div>
 
-      <div className="women-grid">
-        {visibleProducts.map((product) => (
-          <div
-            className="product-card"
-            key={product.id}
-            onClick={() => navigate(`/product/${product.id}`)}
-          >
-            <div className="product-image">
-              <img src={product.img} alt={product.name} />
-            </div>
-
-            <div className="product-info">
-              <h3 className="product-price">${product.price}</h3>
-              <p className="product-name">{product.name}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      <ProductGrid products={visibleProducts} />
 
       {visibleCount < womenProducts.length && (
         <div className="view-all">

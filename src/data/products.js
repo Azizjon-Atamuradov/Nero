@@ -60,38 +60,46 @@ export const products = [
   {
     id: 1,
     name: "Cool Sneakers",
-    price: 1,
+    price: 10,
+    salePrice: 1,
     img: product1,
     category: "men",
     isBestSeller: true,
     isNew: true,
+     isOnSale: true,
   },
   {
     id: 2,
     name: "Running Shoes",
     price: 2,
+    salePrice: 2,
     img: product2,
     category: "men",
     isBestSeller: false,
     isNew: true,
+     isOnSale: true,
   },
   {
     id: 3,
     name: "Stylish Jacket",
     price: 3,
+    salePrice: 3,
     img: product3,
     category: "men",
     isBestSeller: false,
     isNew: true,
+     isOnSale: true,
   },
   {
     id: 4,
     name: "Classic Hoodie",
     price: 4,
     img: product4,
+    salePrice: 4,
     category: "men",
     isBestSeller: false,
     isNew: true,
+     isOnSale: true,
   },
   {
     id: 5,
@@ -100,7 +108,7 @@ export const products = [
     img: product5,
     category: "men",
     isBestSeller: false,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 6,
@@ -110,7 +118,7 @@ export const products = [
     category: "men",
     isBestSeller: false,
     isNew: false,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 7,
@@ -120,7 +128,7 @@ export const products = [
     category: "men",
     isBestSeller: false,
     isNew: false,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 8,
@@ -130,7 +138,7 @@ export const products = [
     category: "men",
     isBestSeller: false,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 9,
@@ -140,7 +148,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: false,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 10,
@@ -150,7 +158,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 11,
@@ -160,7 +168,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 12,
@@ -170,7 +178,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 13,
@@ -180,7 +188,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 14,
@@ -190,7 +198,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 15,
@@ -200,7 +208,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 16,
@@ -210,7 +218,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 17,
@@ -220,7 +228,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 18,
@@ -230,7 +238,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 19,
@@ -240,7 +248,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 20,
@@ -250,7 +258,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 21,
@@ -260,7 +268,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 22,
@@ -270,7 +278,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 23,
@@ -280,7 +288,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 24,
@@ -290,7 +298,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 25,
@@ -300,7 +308,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 26,
@@ -310,7 +318,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 27,
@@ -320,7 +328,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 28,
@@ -330,7 +338,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 29,
@@ -340,7 +348,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 30,
@@ -350,7 +358,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 31,
@@ -360,7 +368,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 32,
@@ -370,7 +378,7 @@ export const products = [
     category: "men",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 33,
@@ -400,7 +408,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 36,
@@ -410,7 +418,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 37,
@@ -420,7 +428,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 38,
@@ -430,7 +438,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 39,
@@ -440,7 +448,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 40,
@@ -450,7 +458,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 41,
@@ -460,7 +468,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 42,
@@ -470,7 +478,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 43,
@@ -480,7 +488,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 44,
@@ -490,7 +498,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 45,
@@ -500,7 +508,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 46,
@@ -510,7 +518,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 47,
@@ -520,7 +528,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 48,
@@ -530,7 +538,7 @@ export const products = [
     category: "women",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 65,
@@ -540,7 +548,7 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+   isOnSale: true,
   },
   {
     id: 66,
@@ -550,7 +558,7 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+     isOnSale: true,
   },
   {
     id: 67,
@@ -560,7 +568,7 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 68,
@@ -570,7 +578,7 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 69,
@@ -580,7 +588,7 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 70,
@@ -590,7 +598,7 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 71,
@@ -600,7 +608,7 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 72,
@@ -610,7 +618,7 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
   {
     id: 73,
@@ -620,6 +628,6 @@ export const products = [
     category: "kids",
     isBestSeller: true,
     isNew: true,
-    isOnSale: true,
+    isOnSale: false,
   },
 ];

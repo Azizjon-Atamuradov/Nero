@@ -2,6 +2,7 @@ import "./NewArrivals.css";
 
 import { products } from "../../data/products";
 import { useNavigate } from "react-router-dom";
+import ProductGrid from "../ProductGrid/ProductGrid";
 
 const NewArrivals = () => {
   const navigate = useNavigate();
@@ -15,31 +16,16 @@ const NewArrivals = () => {
     <section className="arrivals-container">
       <div className="arrivals-header">
         <h1>NEW ARRIVALS</h1>
-        <p>Discover the latest styles just dropped this week.</p>
+        <p>Latest drops. Designed for movement and everyday style. </p>
       </div>
 
-      <div className="products-grid">
-        {visibleProducts.map((product) => (
-          <div
-            key={product.id}
-            className="product-card"
-            onClick={() => navigate(`/product/${product.id}`)}
-          >
-            <img src={product.img} alt={product.name} />
-            <div className="product-details">
-              <h3>${product.price}</h3>
-              <p>{product.name}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      <ProductGrid products={visibleProducts} />
+
       <div className="view-all">
-        <button onClick={() => navigate("/new-arrivals")}>
-          View All
-        </button>
+        <button onClick={() => navigate("/new-arrivals")}>View All</button>
       </div>
     </section>
   );
 };
 
-export default NewArrivals; 
+export default NewArrivals;
