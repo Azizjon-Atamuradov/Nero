@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import ProductGrid from "../../components/ProductGrid/ProductGrid";
 
 const Women = () => {
-  const womenProducts = products.filter((item) => item.category === "women");
+  const womenProducts = products.filter((item) => item.gender === "women");
   const [visibleCount, setVisibleCount] = useState(16);
   const visibleProducts = womenProducts.slice(0, visibleCount);
   const navigate = useNavigate();

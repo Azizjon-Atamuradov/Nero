@@ -15,7 +15,7 @@ import Home from "./pages/Home";
 import Men from "./pages/Men/Men";
 import Women from "./pages/Women/Women";
 import Kids from "./pages/Kids/Kids";
-import ProductDetails from "./pages/ProductDetails";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import NewArrivalsProducts from "./pages/NewArrivalsProducts/NewArrivalsProducts";
 import BestSellersProducts from "./pages/BestSellersProducrs/BestSellersProducts";
 import SaleProducts from "./pages/SaleProducts/SaleProducts";
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
       <Route path="product/:id" element={<ProductDetails />} />
       <Route path="new-arrivals" element={<NewArrivalsProducts />} />
       <Route path="best-sellers" element={<BestSellersProducts />} />
-      <Route path="sale" element={<SaleProducts/>}/>
+      <Route path="sale" element={<SaleProducts />} />
     </Route>,
   ),
 );

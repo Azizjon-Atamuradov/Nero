@@ -4,7 +4,7 @@ import { useState } from "react";
 import ProductGrid from "../../components/ProductGrid/ProductGrid";
 
 const Men = () => {
-  const menProducts = products.filter((item) => item.category === "men");
+  const menProducts = products.filter((item) => item.gender === "men");
   const [visibleCount, setVisibleCount] = useState(16);
   const visibleProducts = menProducts.slice(0, visibleCount);
 

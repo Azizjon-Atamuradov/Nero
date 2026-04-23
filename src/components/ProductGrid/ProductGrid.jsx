@@ -1,6 +1,9 @@
 import "./ProductGrid.css";
+import { useNavigate } from "react-router-dom";
 
 const ProductGrid = ({ products }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="product-grid">
       {products.map((product) => (
