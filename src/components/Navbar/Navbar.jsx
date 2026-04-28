@@ -2,11 +2,13 @@ import logo from "../../assets/nero-logo.png";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { FaSearch, FaUser, FaShoppingBag, FaBars } from "react-icons/fa";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { cart } = useContext(CartContext);
 
   return (
     <nav className="navbar">
@@ -78,13 +80,15 @@ const Navbar = () => {
             </div>
           )}
         </div>
+        <NavLink to="/bag" className="bag-icon">
+          <FaShoppingBag />
+          <span className="bag-count">{cart.length}</span>
+        </NavLink>
 
-        <FaShoppingBag />
-          <div className="menu-icon" onClick={() => setMenuOpen((prev) => !prev)}>
-        <FaBars />
+        <div className="menu-icon" onClick={() => setMenuOpen((prev) => !prev)}>
+          <FaBars />
+        </div>
       </div>
-      </div>
-    
     </nav>
   );
 };

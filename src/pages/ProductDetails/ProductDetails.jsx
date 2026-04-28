@@ -1,6 +1,6 @@
-
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 import { products } from "../../data/products";
 import "./ProductDetails.css";
 
@@ -10,15 +10,27 @@ const ProductDetails = () => {
 
   const [selectedSize, setSelectedSize] = useState(null);
 
+  const { addToCart } = useContext(CartContext);
+
   if (!product) {
     return <h2 className="not-found">Product not found</h2>;
   }
 
-   const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
- 
+  const capitalize = (word) => word.charAt(0).toUpperCase() + word.slice(1);
+
+  const handleAddToBag = () => {
+    if (!selectedSize) {
+      alert("Please select size");
+      return;
+    }
+
+    addToCart(product, selectedSize);
+
+    alert("Product added to bag");
+  };
+
   return (
     <div className="product-details">
-   
       <div className="left-side">
         <div className="product-details-image">
           <img src={product.img} alt={product.name} />
@@ -49,13 +61,12 @@ const ProductDetails = () => {
           </div>
         </div>
 
-        <button className="add-to-bag">Add to Bag</button>
+        <button className="add-to-bag" onClick={handleAddToBag}>
+          Add to Bag
+        </button>
       </div>
     </div>
   );
 };
 
 export default ProductDetails;
-
-
- 

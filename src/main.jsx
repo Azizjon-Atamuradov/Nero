@@ -19,6 +19,8 @@ import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import NewArrivalsProducts from "./pages/NewArrivalsProducts/NewArrivalsProducts";
 import BestSellersProducts from "./pages/BestSellersProducrs/BestSellersProducts";
 import SaleProducts from "./pages/SaleProducts/SaleProducts";
+import Bag from "./pages/Bag/Bag";
+import { CartProvider } from "./context/CartContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,12 +33,15 @@ const router = createBrowserRouter(
       <Route path="new-arrivals" element={<NewArrivalsProducts />} />
       <Route path="best-sellers" element={<BestSellersProducts />} />
       <Route path="sale" element={<SaleProducts />} />
+      <Route path="bag" element={<Bag />} />
     </Route>,
   ),
 );
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
   </StrictMode>,
 );
