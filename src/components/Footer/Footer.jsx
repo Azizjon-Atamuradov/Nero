@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        {/* column 1 */}
         <div className="footer-col">
           <h4>Products</h4>
           <p>New Arrivals</p>
