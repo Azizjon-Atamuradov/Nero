@@ -44,8 +44,8 @@ body {
 }
 
 .nav-center li {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 400;
   color: black;
   cursor: pointer;
 }
@@ -69,10 +69,11 @@ body {
   justify-content: flex-end;
   gap: 20px;
   padding-right: 20px;
+
 }
 
 .nav-right svg {
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
 }
 
@@ -110,6 +111,59 @@ body {
   font-size: 24px;
   cursor: pointer;
 }
+
+.bag-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  cursor: pointer;
+}
+
+.bag-svg{
+  font-size: 20px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+  .bag-icon:hover .bag-svg{
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+
+
+  .bag-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    background-color:#2e7d32;
+    border-radius: 999px;
+
+    transition: transform 0.2s ease;
+    color: white;
+  }
+
+ 
+
+  .bag-icon:active .bag-svg {
+    transform: scale(0.95);
+  }
+
+
+
+
 
 @media (max-width: 1024px) {
   .nav-center {

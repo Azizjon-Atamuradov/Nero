@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 .bag-page {
   max-width: 1400px;
   margin: 0 auto;
@@ -5,7 +7,6 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
-  font-family: Arial, sans-serif;
   color: #111;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .bag-items h1 {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -42,8 +43,8 @@
 }
 
 .bag-image {
-  width: 220px;
-  height: 220px;
+  width: 270px;
+  height: auto;
   object-fit: cover;
   background: #f5f5f5;
   flex-shrink: 0;
@@ -53,13 +54,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-}
-
-.bag-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin: 0;
+  margin-top: 15px;
 }
 
 .bag-info p {
@@ -68,11 +63,17 @@
   font-size: 15px;
 }
 
+.bag-price p {
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+}
+
 .qty-box {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 8px;
+  gap: 8px;
+  margin-top: 140px;
 }
 
 .qty-box button {
@@ -102,14 +103,19 @@
 .remove-btn {
   margin-top: 8px;
   width: fit-content;
-  padding: 0;
   border: none;
   background: transparent;
   color: #111;
-  font-size: 14px;
   cursor: pointer;
   text-decoration: underline;
   transition: 0.2s ease;
+  margin-left: 20px;
+}
+
+.trash-icon {
+  font-size: 20px;
+  color: #111;
+  transition: all 0.2s ease;
 }
 
 .remove-btn:hover {
@@ -135,14 +141,17 @@
 .summary-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 
-.summary-row:last-of-type {
-  margin-bottom: 28px;
+.summary-row-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .checkout-btn {
@@ -160,6 +169,14 @@
 
 .checkout-btn:hover {
   background: #333;
+}
+
+.bag-right-side {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: 15px;
+  padding: 5px;
 }
 
 @media (max-width: 992px) {
@@ -205,4 +222,8 @@
   .checkout-btn {
     padding: 14px;
   }
-}
+} 
+
+
+
+ 

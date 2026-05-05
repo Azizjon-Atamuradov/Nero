@@ -10,6 +10,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { cart } = useContext(CartContext);
 
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
   return (
     <nav className="navbar">
       <div className="nav-left">
@@ -82,7 +84,7 @@ const Navbar = () => {
         </div>
         <NavLink to="/bag" className="bag-icon">
           <FaShoppingBag />
-          <span className="bag-count">{cart.length}</span>
+          {totalItems > 0 && <span className="bag-count">{totalItems}</span>}
         </NavLink>
 
         <div className="menu-icon" onClick={() => setMenuOpen((prev) => !prev)}>
