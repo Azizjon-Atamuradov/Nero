@@ -20,6 +20,7 @@ import NewArrivalsProducts from "./pages/NewArrivalsProducts/NewArrivalsProducts
 import BestSellersProducts from "./pages/BestSellersProducrs/BestSellersProducts";
 import SaleProducts from "./pages/SaleProducts/SaleProducts";
 import Bag from "./pages/Bag/Bag";
+import Search from "./pages/Search/Search";
 import { CartProvider } from "./context/CartContext";
 
 const router = createBrowserRouter(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
       <Route path="best-sellers" element={<BestSellersProducts />} />
       <Route path="sale" element={<SaleProducts />} />
       <Route path="bag" element={<Bag />} />
+      <Route path="search" element={<Search />} />
     </Route>,
   ),
 );
@@ -45,5 +47,3 @@ createRoot(document.getElementById("root")).render(
     </CartProvider>
   </StrictMode>,
 );
-
-

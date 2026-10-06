@@ -69,7 +69,11 @@ const Navbar = () => {
       </ul>
 
       <div className="nav-right">
-        <FaSearch />
+        <NavLink to="/search" className="search-icon">
+           <FaSearch />
+        </NavLink>
+
+       
 
         <div className="user-menu" onClick={() => setIsOpen((prev) => !prev)}>
           <FaUser />
@@ -96,5 +100,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
