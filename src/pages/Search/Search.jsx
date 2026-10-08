@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Search.css";
 import { products } from "../../data/products";
+import { useNavigate } from "react-router-dom";
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -13,6 +14,7 @@ const Search = () => {
       (product.name?.toLowerCase().includes(cleanSearchTerm) ||
         product.category?.toLowerCase() === cleanSearchTerm),
   );
+  const navigate = useNavigate();
 
   return (
     <div className="search-container">
@@ -22,13 +24,21 @@ const Search = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
 
-      <div>
+      <div className="product-grid">
         {result.map((p) => (
-          <li key={p.id}>
-            <h1>{p.name}</h1>
-            <img src={p.img} alt={p.name} />
-            <p>{p.price}$</p>
-          </li>
+          <div
+            className="product-card"
+            key={p.id}
+            onClick={() => navigate(`/product/${p.id}`)}
+          >
+            <div className="product-image">
+              <img src={p.img} alt={p.name} />
+            </div>
+            <div className="product-info">
+              <p className="product-price">${p.price}</p>
+              <p className="product-name">{p.name}</p>
+            </div>
+          </div>
         ))}
       </div>
     </div>
@@ -36,3 +46,4 @@ const Search = () => {
 };
 
 export default Search;
+
