@@ -14,6 +14,7 @@ const Search = () => {
       (product.name?.toLowerCase().includes(cleanSearchTerm) ||
         product.category?.toLowerCase() === cleanSearchTerm),
   );
+
   const navigate = useNavigate();
 
   return (
@@ -25,25 +26,30 @@ const Search = () => {
       />
 
       <div className="product-grid">
-        {result.map((p) => (
-          <div
-            className="product-card"
-            key={p.id}
-            onClick={() => navigate(`/product/${p.id}`)}
-          >
-            <div className="product-image">
-              <img src={p.img} alt={p.name} />
+        {result.length > 0 ? (
+          result.map((p) => (
+            <div
+              className="product-card"
+              key={p.id}
+              onClick={() => navigate(`/product/${p.id}`)}
+            >
+              <div className="product-image">
+                <img src={p.img} alt={p.name} />
+              </div>
+              <div className="product-info">
+                <p className="product-price">${p.price}</p>
+                <p className="product-name">{p.name}</p>
+              </div>
             </div>
-            <div className="product-info">
-              <p className="product-price">${p.price}</p>
-              <p className="product-name">{p.name}</p>
-            </div>
-          </div>
-        ))}
+          ))
+        ) : cleanSearchTerm.length > 0 ? (
+          <p>No products found</p>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
 };
 
 export default Search;
-
