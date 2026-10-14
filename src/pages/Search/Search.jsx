@@ -18,12 +18,15 @@ const Search = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="search-container">
-      <input
-        type="text"
-        placeholder="Search"
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
+    <div className="search-main-container">
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search"
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-input"
+        />
+      </div>
 
       <div className="product-grid">
         {result.length > 0 ? (
@@ -43,7 +46,12 @@ const Search = () => {
             </div>
           ))
         ) : cleanSearchTerm.length > 0 ? (
-          <p>No products found</p>
+          <div className="product-not-found">
+            <p>
+              No results for <span>"{searchTerm}"</span>
+            </p>
+            <p> Check the spelling, or try something less specific.</p>
+          </div>
         ) : (
           ""
         )}

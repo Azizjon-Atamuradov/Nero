@@ -1,4 +1,4 @@
-.product-details {
+.product-details{
   display: flex;
   gap: 60px;
   padding: 40px;
@@ -89,7 +89,6 @@
 .add-to-bag {
   margin-top: 20px;
   padding: 15px 32px;
-  font-size: 14px;
   font-weight: 500;
   letter-spacing: 1px;
   background: #000;
@@ -112,11 +111,11 @@
     padding: 20px;
   }
 
-  .product-title {
+  .product-details-title {
     font-size: 24px;
   }
 
-  .product-image {
+  .product-details-image {
     max-width: 100%;
   }
 }

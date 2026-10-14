@@ -1,7 +1,7 @@
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
   cursor: pointer;
 }
 
@@ -46,15 +46,33 @@
 }
 
 .product-price {
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
- margin: 0;
+  color: #767677;
+  font-size: 14px;
+  font-weight: 450;
+  margin: 0;
 }
 
 .product-name {
   font-size: 15px;
   font-weight: 400;
-  color: #767677;
+  color: #000;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-image {
+    height: 250px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product-image {
+    height: 300px;
+  }
 }
