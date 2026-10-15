@@ -3,9 +3,11 @@
 }
 
 .search-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .search-input {
@@ -14,6 +16,12 @@
   border: solid 1px;
   border-radius: 25px;
   padding: 20px;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+.search-input-wrapper {
+  position: relative;
+  width: 930px;
 }
 
 .product-not-found {
@@ -29,14 +37,33 @@
   font-weight: 700;
 }
 
+.clear-input {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(calc(-50% + 1px));
+  font-size: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
 @media (max-width: 767px) {
   .search-input {
+    width: 300px;
+  }
+  .search-input-wrapper {
     width: 300px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1032px) {
   .search-input {
+    width: 700px;
+  }
+  .search-input-wrapper {
     width: 700px;
   }
 }

@@ -69,6 +69,7 @@ const Navbar = () => {
       </ul>
 
       <div className="nav-right">
+        
         <NavLink to="/search" className="search-icon">
            <FaSearch />
         </NavLink>

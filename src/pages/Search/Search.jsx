@@ -20,12 +20,27 @@ const Search = () => {
   return (
     <div className="search-main-container">
       <div className="search-container">
-        <input
-          type="text"
-          placeholder="Search"
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-input"
-        />
+        <div className="search-input-wrapper">
+          <input
+            type="text"
+            placeholder="Search"
+            onChange={(e) => setSearchTerm(e.target.value)}
+            value={searchTerm}
+            className="search-input"
+          />
+          {searchTerm.length > 0 ? (
+            <button
+              className="clear-input"
+              onClick={() => setSearchTerm("")}
+              type="button"
+              aria-label="Clear search"
+            >
+              X
+            </button>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
 
       <div className="product-grid">
@@ -45,16 +60,14 @@ const Search = () => {
               </div>
             </div>
           ))
-        ) : cleanSearchTerm.length > 0 ? (
+        ) : cleanSearchTerm.length > 1 ? (
           <div className="product-not-found">
             <p>
               No results for <span>"{searchTerm}"</span>
             </p>
             <p> Check the spelling, or try something less specific.</p>
           </div>
-        ) : (
-          ""
-        )}
+        ) : null}
       </div>
     </div>
   );
