@@ -36,35 +36,39 @@ const Bag = () => {
 
         {cart.map((item) => (
           <div key={`${item.id}-${item.selectedSize}`} className="bag-card">
-            <div className="bag-image">
+            <div className="bag-image-wrapper">
               <img src={item.img} alt={item.name} className="bag-image" />
             </div>
 
-            <div className="bag-info">
-              <h3>{item.name}</h3>
-              <p>Size: {item.selectedSize}</p>
+            <div className="bag-details">
+              <div className="bag-info">
+                <h3>{item.name}</h3>
+                <p>Size: {item.selectedSize}</p>
 
-              <div className="qty-box">
-                <button onClick={() => decreaseQty(item.id, item.selectedSize)}>
-                  -
-                </button>
-                <span>{item.quantity}</span>
-                <button onClick={() => addToCart(item, item.selectedSize)}>
-                  +
-                </button>
+                <div className="qty-box">
+                  <button
+                    onClick={() => decreaseQty(item.id, item.selectedSize)}
+                  >
+                    -
+                  </button>
+                  <span>{item.quantity}</span>
+                  <button onClick={() => addToCart(item, item.selectedSize)}>
+                    +
+                  </button>
+                </div>
               </div>
-            </div>
 
-            <div className="bag-right-side">
-              <button
-                className="remove-btn"
-                onClick={() => removeFromCart(item.id, item.selectedSize)}
-              >
-                <FaRegTrashCan className="trash-icon" />
-              </button>
+              <div className="bag-right-side">
+                <button
+                  className="remove-btn"
+                  onClick={() => removeFromCart(item.id, item.selectedSize)}
+                >
+                  <FaRegTrashCan className="trash-icon" />
+                </button>
 
-              <div className="bag-price">
-                <p>${item.price.toFixed(2)}</p>
+                <div className="bag-price">
+                  <p>${item.price.toFixed(2)}</p>
+                </div>
               </div>
             </div>
           </div>
