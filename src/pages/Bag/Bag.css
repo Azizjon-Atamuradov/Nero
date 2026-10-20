@@ -135,10 +135,8 @@
 .bag-summary {
   height: fit-content;
   padding: 28px;
-  border: 1px solid #ececec;
-  border-radius: 14px;
   position: sticky;
-  top: 30px;
+  top: 100px;
   background: #fff;
 }
 

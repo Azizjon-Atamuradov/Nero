@@ -69,19 +69,21 @@ const Navbar = () => {
       </ul>
 
       <div className="nav-right">
-        
         <NavLink to="/search" className="search-icon">
-           <FaSearch />
+          <FaSearch />
         </NavLink>
-
-       
 
         <div className="user-menu" onClick={() => setIsOpen((prev) => !prev)}>
           <FaUser />
 
           {isOpen && (
             <div className="dropdown">
-              <p>My Profile</p>
+              <NavLink
+                to="/profile"
+                className="profile"
+              >
+                <p>My Profile</p>
+              </NavLink>
               <p>Orders</p>
               <p>Logout</p>
             </div>
