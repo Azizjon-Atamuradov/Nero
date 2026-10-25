@@ -12,35 +12,43 @@ const Profile = () => {
     localStorage.getItem("phone") || "(412) 555-0123",
   );
 
-  const [savedProfile, setSavedProfile] = useState({
-    name: localStorage.getItem("name") || "Alex Johnson",
-    email: localStorage.getItem("email") || "alex@example.com",
-    phone: localStorage.getItem("phone") || "(412) 555-0123",
-  });
+  const [message, setMessage] = useState("");
 
-  const handleSave = () => {
-    localStorage.setItem("name", name);
-    localStorage.setItem("email", email);
-    localStorage.setItem("phone", phone);
+  const handleSave = (event) => {
+    event.preventDefault();
 
-    setSavedProfile({
-      name,
-      email,
-      phone,
-    });
+    const cleanName = name.trim();
+    const cleanEmail = email.trim();
+    const cleanPhone = phone.trim();
+
+    if (cleanName.length === 0 || cleanPhone.length === 0) {
+      setMessage("Please fill in all fields");
+      return;
+    }
+
+    localStorage.setItem("name", cleanName);
+    localStorage.setItem("email", cleanEmail);
+    localStorage.setItem("phone", cleanPhone);
+
+    setMessage("Profile saved successfully");
   };
 
   return (
-    <div className="profile-page">
+    <form className="profile-page" onSubmit={handleSave}>
       <h1> Profile</h1>
 
       <div className="profile-field">
         <label htmlFor="name">Full Name</label>
+
         <input
           id="name"
           type="text"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+          required
+          onChange={(e) => {
+            setName(e.target.value);
+            setMessage("");
+          }}
         />
       </div>
 
@@ -50,7 +58,11 @@ const Profile = () => {
           id="email"
           type="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          required
+          onChange={(e) => {
+            setEmail(e.target.value);
+            setMessage("");
+          }}
         />
       </div>
 
@@ -60,15 +72,19 @@ const Profile = () => {
           id="phone"
           type="tel"
           value={phone}
-          onChange={(e) => setPhone(e.target.value)}
+          required
+          onChange={(e) => {
+            setPhone(e.target.value);
+            setMessage("");
+          }}
         />
       </div>
 
-      <button onClick={handleSave}>Save Profile</button>
-      <p>{savedProfile.name}</p>
-      <p>{savedProfile.email}</p>
-      <p>{savedProfile.phone}</p>
-    </div>
+      <button type="submit" className="profile-button">
+        Save Profile
+      </button>
+      <div className="profile-message"> {message && <p>{message}</p>}</div>
+    </form>
   );
 };
 
