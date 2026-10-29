@@ -2,15 +2,29 @@ import logo from "../../assets/nero-logo.png";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { FaSearch, FaUser, FaShoppingBag, FaBars } from "react-icons/fa";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect, useRef } from "react";
 import { CartContext } from "../../context/CartContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { cart } = useContext(CartContext);
+  const userMenuRef = useRef(null);
 
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (userMenuRef.current && !userMenuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="navbar">
@@ -73,14 +87,22 @@ const Navbar = () => {
           <FaSearch />
         </NavLink>
 
-        <div className="user-menu" onClick={() => setIsOpen((prev) => !prev)}>
-          <FaUser />
+        <div className="user-menu" ref={userMenuRef}>
+          <button
+            type="button"
+            onClick={() => setIsOpen((prev) => !prev)}
+            aria-label="Open profile menu"
+            aria-expanded={isOpen}
+          >
+            <FaUser />
+          </button>
 
           {isOpen && (
             <div className="dropdown">
               <NavLink
                 to="/profile"
                 className="profile"
+                onClick={() => setIsOpen(false)}
               >
                 <p>My Profile</p>
               </NavLink>
@@ -103,3 +125,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

@@ -164,6 +164,20 @@ body {
   cursor: pointer;
 }
 
+.user-menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+
+
 @media (max-width: 1024px) {
   .nav-center {
     gap: 30px;
