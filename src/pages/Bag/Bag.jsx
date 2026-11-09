@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 import "./Bag.css";
 import { FaRegTrashCan } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Bag = () => {
   const { cart, addToCart, decreaseQty, removeFromCart } =
@@ -19,6 +20,7 @@ const Bag = () => {
 
   const totalTax = totalPrice * TAX_RATE;
   const totalSummary = totalPrice + totalTax + DELIVERY_FEE;
+  const navigate = useNavigate();
 
   if (cart.length === 0) {
     return (
@@ -87,19 +89,19 @@ const Bag = () => {
         </div>
         <div className="summary-row">
           <span>Delivery</span>
-          <span>${DELIVERY_FEE}</span>
+          <span>${DELIVERY_FEE.toFixed(2)}</span>
         </div>
 
         <div className="summary-row-total">
           <span>Total</span>
           <span>${totalSummary.toFixed(2)}</span>
         </div>
-        <button className="checkout-btn">Checkout</button>
+        <button className="checkout-btn" onClick={() => navigate("/checkout")}>
+          Checkout
+        </button>
       </div>
     </div>
   );
 };
 
 export default Bag;
-
-

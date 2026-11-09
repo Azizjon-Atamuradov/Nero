@@ -93,6 +93,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   z-index: 1000;
+  color: black;
 }
 
 .dropdown p {
@@ -104,6 +105,11 @@ body {
 
 .dropdown p:hover {
   background: #f5f5f5;
+}
+
+.dropdown a {
+  color: black;
+  text-decoration: none;
 }
 
 .menu-icon {

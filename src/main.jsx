@@ -23,6 +23,7 @@ import Bag from "./pages/Bag/Bag";
 import Search from "./pages/Search/Search";
 import Profile from "./pages/Profile/Profile";
 import { CartProvider } from "./context/CartContext";
+import Checkout from "./pages/Checkout/Checkout";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -36,6 +37,7 @@ const router = createBrowserRouter(
       <Route path="best-sellers" element={<BestSellersProducts />} />
       <Route path="sale" element={<SaleProducts />} />
       <Route path="bag" element={<Bag />} />
+      <Route path="checkout" element={<Checkout />} />
       <Route path="search" element={<Search />} />
       <Route path="profile" element={<Profile />} />
     </Route>,
