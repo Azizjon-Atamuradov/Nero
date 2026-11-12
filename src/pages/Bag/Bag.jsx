@@ -12,14 +12,12 @@ const Bag = () => {
     (total, item) => total + item.price * item.quantity,
     0,
   );
-
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-
   const TAX_RATE = 0.07;
   const DELIVERY_FEE = 4.99;
-
   const totalTax = totalPrice * TAX_RATE;
   const totalSummary = totalPrice + totalTax + DELIVERY_FEE;
+
   const navigate = useNavigate();
 
   if (cart.length === 0) {
